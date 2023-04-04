@@ -8,7 +8,7 @@ const CardDetail = () => {
   const { id } = useParams();
   const [count, setCount] = useState(1);
 
-  const getProducto = async () => {
+  const getProductos = async () => {
     try {
       const response = await fetch(`https://fakestoreapi.com/products/${id}`);
       const data = await response.json();
@@ -20,7 +20,7 @@ const CardDetail = () => {
   };
 
   useEffect(() => {
-    getProducto();
+    getProductos();
   }, []);
 
   if (!producto) {
@@ -32,6 +32,7 @@ const CardDetail = () => {
   }
 
   return (
+    <>
     <div>
       <h3>{producto.title}</h3>
       <img src={producto.image} alt={producto.title} width="200" height="250" />
@@ -40,6 +41,7 @@ const CardDetail = () => {
       <p>{producto.category}</p>
       <Counter count={count} setCount={setCount} />
     </div>
+    </>
   );
 };
 
