@@ -30,6 +30,7 @@ function App() {
       <Route path="/products" element={<ProductList productos={productos} />} />
       <Route path="/products/:id" element={<CardDetail />} />
       <Route path="/products/category/electronics" element={<ItemListContainer productos={productos} />}/>
+      <Route path="/products/category/electronics" element={<ItemListContainer productos={productos} />}/>
       <Route path="/products/category/electronics/:id"  element= {<CardDetail productos={productos}/>} />
       <Route path="/products/category/men's clothing" element={<ItemListContainer productos={productos} />}/>
       <Route path="/products/category/men's clothing/:id"  element= {<CardDetail productos={productos}/>} />

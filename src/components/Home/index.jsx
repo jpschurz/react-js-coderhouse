@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div>
-      <h2>Bienvenidos/as a nuestro sitio!</h2>
+      <h2>Bienvenidos/as WizardingStop</h2>
     </div>
   );
 };

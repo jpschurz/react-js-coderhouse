@@ -1,12 +1,6 @@
 .container_nav {
     display: flex;
-    background-color: blue;
-    color: white;
-    justify-content: space-around;
-
-    &:hover {
-        background-color: yellow;
-    }
+    
 }
 
 .logo {
@@ -26,11 +20,24 @@
     border-radius: 80%;
 }
 
-.menu {
-
-    font-size: 25px;
+.menu {    
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+
+        
+}
+
+.item{
+
+    p{
+        color: #ff0000;
+        &:hover {
+            background-color: yellow;
+        }
+    }
+    
 }
 
 ul {

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import styles from "./card.module.scss"
+import { Link } from "react-router-dom"
+import styles from "./main.module.scss"
 
 const Card = ({ producto }) => {
   return (

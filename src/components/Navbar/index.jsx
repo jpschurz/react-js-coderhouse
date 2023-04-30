@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { HiShoppingCart } from "react-icons/hi"
+import styles from "./main.module.scss"
 
 
 function Navbar() {
@@ -10,14 +11,14 @@ function Navbar() {
   
   return (
     <header>
-      <nav className="container_nav">
-        <div className="logo">
+      <nav className={styles.container_nav}>
+        <div className={styles.logo}>
         <NavLink to="/home"><img className="" src="" alt=""/></NavLink>
         </div>        
-        <div className="menu">
-          <NavLink to="/home" style={({ isActive }) => (isActive ? activeStyle : undefined)}><p className="items">Home</p></NavLink>
-          <NavLink to="/products" style={({ isActive }) => (isActive ? activeStyle : undefined)}><p className="items">Products</p></NavLink>
-          <NavLink to="/cart" style={({ isActive }) => (isActive ? activeStyle : undefined)}><p className="items"><HiShoppingCart /></p></NavLink>
+        <div className={styles.menu}>
+          <NavLink to="/home" style={({ isActive }) => (isActive ? activeStyle : undefined)}><p className={styles.items}>Home</p></NavLink>
+          <NavLink to="/products" style={({ isActive }) => (isActive ? activeStyle : undefined)}><p className={styles.items}>Products</p></NavLink>
+          <NavLink to="/cart" style={({ isActive }) => (isActive ? activeStyle : undefined)}><p className={styles.items}><HiShoppingCart /></p></NavLink>
         </div>
     </nav>
     </header>
