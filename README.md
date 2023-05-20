@@ -1,5 +1,5 @@
 # react-js-coderhouse
 
 Tecnologias usadas:
-React
-Firebase
+[![React][React.js]][React-url]
+[![Bootstrap][Bootstrap.com]][Bootstrap-url]
